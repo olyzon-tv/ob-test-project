@@ -1,6 +1,8 @@
 from obproject import ProjectFlow
 from metaflow import step
 
+from mymodule.main import add
+
 
 class HelloFlow(ProjectFlow):
     """
@@ -27,6 +29,7 @@ class HelloFlow(ProjectFlow):
 
         """
         print("Metaflow says: Hi!")
+        print(add(1, 2))
         self.next(self.end)
 
     @step
