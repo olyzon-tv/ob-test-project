@@ -1,5 +1,4 @@
-
-# An Empty Outerbounds Project 👋🌱
+# A test Outerbounds Project 👋🌱
 
 Use this as a blank slate for your own projects.
 
