@@ -9,6 +9,7 @@ flows/
 deployments/
 models/
 data/
+src/
 ```
 
 subdirectories to add functionality in your project.
