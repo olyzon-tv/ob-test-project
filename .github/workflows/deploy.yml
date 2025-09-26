@@ -30,13 +30,14 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: 3.11
+        python-version: 3.12.6
 
     - name: Install dependencies
       run: |
         python3 -m pip install -U requests
         python3 -m pip install outerbounds pyyaml
         python3 -m pip install -U ob-project-utils
+        python3 -m pip install -e . 
     - name: Configure Outerbounds
       run: |
         PROJECT_NAME=$(yq .project obproject.toml)
