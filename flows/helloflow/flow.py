@@ -19,6 +19,8 @@ class HelloFlow(ProjectFlow):
         is the first step in the flow.
 
         """
+        import mymodule
+
         print("HelloFlow is starting.")
         self.next(self.hello)
 
