@@ -1,3 +1,5 @@
+import sys
+
 from obproject import ProjectFlow
 from metaflow import step
 
@@ -21,6 +23,7 @@ class HelloFlow(ProjectFlow):
         """
 
         print("HelloFlow is starting.")
+        print(sys.version)
         self.next(self.hello)
 
     @step
@@ -31,6 +34,7 @@ class HelloFlow(ProjectFlow):
         """
         print("Metaflow says: Hi!")
         print(add(1, 2))
+        print(sys.version)
         self.next(self.end)
 
     @step
@@ -41,6 +45,7 @@ class HelloFlow(ProjectFlow):
 
         """
         print("HelloFlow is all done.")
+        print(sys.version)
 
 
 if __name__ == "__main__":
