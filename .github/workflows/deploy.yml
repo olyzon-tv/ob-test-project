@@ -54,6 +54,11 @@ jobs:
           --perimeter $PERIMETER \
           --github-actions
 
+    - name: Show Python version and project info
+      run: |
+        python3 --version
+        python3 -c 'from metaflow import pyproject_toml_parser; f = open("pyproject.toml", "r"); print(pyproject_toml_parser(f.read())); f.close()'
+
     - name: Deploy Project
       env:
         COMMIT_URL: "https://github.com/${{ github.repository }}/commit/"
