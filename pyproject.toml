@@ -7,7 +7,7 @@ requires-python = "==3.12.6"
 dependencies = [
     "aws-secretsmanager-caching==1.1.3",
     "boto3==1.40.18",
-    "outerbounds==0.10.8",
+    "outerbounds==0.10.11",
     "pydantic==2.11.7",
     "pyiceberg[s3fs,glue,polars]==0.8.0",
 ]
